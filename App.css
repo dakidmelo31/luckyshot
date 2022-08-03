@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+body{
+  padding: 0;
+  margin: 0;
+
+}
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+div.page{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: radial-gradient(circle, rgb(2, 48, 16), rgb(0, 53, 38));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerPageOverlay{
+  background: transparent url("images/1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 80vw;
+  height: 96vh;
+  border-radius: 10px;
+}
+.innerPage{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent, #00000084);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.navbar{
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo span{
+  color: #fff;
+  font-weight: 800;
+  font-size: 30px;
+}
+.logo {
+  padding: 10px;
+  color: orange;
+  font-weight: 800;
+  font-size: 25px;
+}
+.links{
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 30px;
+  min-width: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.links a{
+  color: #d6d6d6;
+  text-decoration: none;
+}
+.main{
+  display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+width: 650px;
+}
+.main p{
+  font-size: 20px;
+  color :#fff;
+}
+h1{
+  font-size: 45px;
+  color: #fff;
+  font-weight: 200;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.sec a{
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  box-shadow: 5px 15px 25px #00000022;
+  transition: all .3s ease-in;
+}
+.sec a:hover{
+  background-color: #ffffff33;
+}
+footer{
+  padding-bottom: 25px;
+  width: 100%;
+  display: flex; 
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+  div.innerPageOverlay{
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .links{
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+    right: -105vw;
+    top: 0;
+    background-color: #000000;
+    text-align: justify;
+    flex-flow: column;
+  }
+.main{
+    width: 90vw;
+    padding: 15px 10px;
+    background: linear-gradient(to bottom, transparent, #00000062, #00000062, transparent);
+  }
+
+}
+span.orange{
+  color: orange;
+  font-size: 50px;
+}
+h2{
+  color: #bef300
+}
+.sec{
+  width: 100%;
+  display: flex; flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sec a{
+  cursor: pointer;
+}
+.sec a.merchant{
+  border: 1px solid #bef300;
+}
+.sec a.customer{
+  border: 1px solid orange;
+}
